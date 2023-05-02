@@ -71,8 +71,8 @@ describe('<Switch />', () => {
       container: { firstChild: root },
     } = render(<Switch />);
 
-    expect(root.childNodes[0]).to.have.property('tagName', 'SPAN');
-    expect(root.childNodes[0]).to.have.class(classes.track);
+    expect(root?.childNodes[0]).to.have.property('tagName', 'SPAN');
+    expect(root?.childNodes[0]).to.have.class(classes.track);
   });
 
   it('renders a `role="checkbox"` with the Unchecked state by default', () => {
